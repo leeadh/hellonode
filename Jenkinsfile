@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        sh '''EXPORT DOCKER_CONTENT_TRUST=1'''
+        sh '''export DOCKER_CONTENT_TRUST=1'''
         
         app = docker.build("leexha/testexample")
     }
