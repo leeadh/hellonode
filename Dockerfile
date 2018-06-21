@@ -4,7 +4,7 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "miiro@getintodevops.com"
 
-RUN EXPORT DOCKER_CONTENT_TRUST=1
+
 
 # set a health check
 HEALTHCHECK --interval=5s \
